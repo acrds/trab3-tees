@@ -1,0 +1,39 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Minimax Othello</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bodystyle">
+    <div class="game">
+        <div class="game-controls">
+            <h1><b>OTHELLO 8X8</b></h1>
+            <button id="restartButton" onmouseover="" style="cursor: pointer;">
+                <b>RECOMEÇAR</b>
+            </button>
+		<div class="turn"></div>
+            <div class="winner"></div>
+        </div>
+
+        <div class="boardContainer" onmouseover="" style="cursor: pointer;"></div>
+
+	<div class="scoreTitle">
+        <b>PLACAR:</b>
+		<div class="score">
+                	<div class="player">Jogador Humano(black): 
+                        <span id="score1"></span>
+                    </div>
+                	<div class="player">Jogador IA(red): 
+                        <span id="score2"></span>
+                    </div>
+        </div>
+	</div>
+    </div>
+    <script src="js/lib/jquery-3.5.0.min.js"></script>
+    <script src="js/boardGame/Board.js"></script>
+    <script src="js/players/Player.js"></script>
+    <script src="js/players/IA.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
